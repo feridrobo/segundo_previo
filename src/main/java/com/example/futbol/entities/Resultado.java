@@ -25,6 +25,11 @@ public class Resultado {
     @JoinColumn(name = "partido_id")
     @OneToOne(fetch = FetchType.LAZY)
     private Partido partido;
+
+
+    @OneToOne
+    @JoinColumn(name = "seleccion_id")
+    private Seleccion seleccion;
 }
 
 
